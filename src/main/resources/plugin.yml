@@ -1,0 +1,6 @@
+name: Tycoon
+version: 1.0.0
+main: com.zartex.tycoon.TycoonPlugin
+api-version: '1.21'
+author: Zartex01
+description: Roblox-style tycoon minigame
