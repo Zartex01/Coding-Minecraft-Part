@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class PlayerData {
 
     private long money;
-    private final int plot;
     private final boolean[] owned = new boolean[MachineType.count()];
 
-    public PlayerData(int plot) {
-        this.plot = plot;
+    public PlayerData() {
+        owned[MachineType.COPPER.index()] = true;
     }
 
     public long getMoney() {
@@ -22,10 +21,6 @@ public class PlayerData {
 
     public void addMoney(long amount) {
         this.money += amount;
-    }
-
-    public int getPlot() {
-        return plot;
     }
 
     public boolean owns(MachineType type) {
@@ -47,6 +42,6 @@ public class PlayerData {
     public void reset() {
         money = 0;
         Arrays.fill(owned, false);
-        setOwned(MachineType.COPPER, true);
+        owned[MachineType.COPPER.index()] = true;
     }
 }
