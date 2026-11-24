@@ -1,0 +1,11 @@
+# Tycoon settings
+worlds:
+  lobby: world
+  tycoon: tycoon
+tycoon:
+  # Number of plots (1-100). Restart the server after changing it.
+  plots: 20
+  # Plots per row (1-20)
+  columns: 5
+# Save interval in seconds
+autosave-seconds: 60
