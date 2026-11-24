@@ -4,3 +4,18 @@ main: com.zartex.tycoon.TycoonPlugin
 api-version: '1.21'
 author: Zartex01
 description: Roblox-style tycoon minigame
+commands:
+  create:
+    description: Create your tycoon plot
+    usage: /create tycoon
+  lobby:
+    description: Go back to the lobby
+    usage: /lobby
+    aliases: [hub]
+  games:
+    description: Open the minigame menu
+    usage: /games
+    aliases: [minigames]
+  tycoon:
+    description: Tycoon commands
+    usage: /tycoon [home|reset]
